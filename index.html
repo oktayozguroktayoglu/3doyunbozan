@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Oyunbozan | 3D Baskı Çocuk Oyuncakları ve Kişiye Özel Ürünler</title>
+  <meta name="description" content="3D yazıcıda üretilen renkli çocuk oyuncakları, eklemli figürler, fidget oyuncaklar, isimli anahtarlık ve kapı yazıları. Kişiye özel sipariş ve toplu sipariş.">
+  <meta property="og:title" content="3D Oyunbozan">
+  <meta property="og:description" content="3D baskı çocuk oyuncakları ve kişiye özel ürünler.">
+  <meta property="og:image" content="https://images.pexels.com/photos/17509941/pexels-photo-17509941.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23ff5a36'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>3D</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="3D Oyunbozan ana sayfa">
+        <span class="logo-mark">3D</span>
+        <span class="logo-text">Oyun<span>bozan</span></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#urunler">Ürünler</a>
+        <a href="#kisiye-ozel">Kişiye Özel</a>
+        <a href="#toplu">Toplu Sipariş</a>
+        <a href="#sss">SSS</a>
+      </nav>
+      <a href="#" class="btn btn-small btn-dark js-shopier" target="_blank" rel="noopener">Mağaza</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menüyü aç" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Katman katman, renk renk</p>
+          <h1>Çocukların <span class="hl hl-1">oyununu</span> bozan değil, <span class="hl hl-2">güzelleştiren</span> oyuncaklar</h1>
+          <p class="lead">3D yazıcıda, 4 renge kadar tek parça üretilen figürler, fidget oyuncaklar, isimli anahtarlıklar ve kapı yazıları. İstediğin rengi ve ismi sen seç, biz basalım.</p>
+          <div class="hero-actions">
+            <a href="#urunler" class="btn btn-primary">Ürünleri Gör</a>
+            <a href="#kisiye-ozel" class="btn btn-ghost">Kişiye Özel Yaptır</a>
+          </div>
+          <ul class="hero-badges">
+            <li><strong>PLA</strong> bitki bazlı malzeme</li>
+            <li><strong>4 renk</strong> tek baskıda</li>
+            <li><strong>1–3 gün</strong> içinde kargoda</li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="blob"></div>
+          <img src="https://images.pexels.com/photos/17509941/pexels-photo-17509941.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="3D yazıcı tablasından yeni basılmış turuncu parça çıkarılıyor" class="hero-img">
+          <div class="color-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÖZELLİKLER -->
+    <section class="features">
+      <div class="container features-grid">
+        <div class="feature">
+          <div class="feature-icon fi-1">🎨</div>
+          <h3>4 renk, tek parça</h3>
+          <p>Boya ya da yapıştırma yok. Renkler baskı sırasında birleşiyor.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon fi-2">✏️</div>
+          <h3>Kişiye özel</h3>
+          <p>İsim, renk ve boyut seçimi. Her ürün siparişe göre basılır.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon fi-3">🌱</div>
+          <h3>Çocuk dostu malzeme</h3>
+          <p>Mısır nişastası bazlı PLA. Keskin kenarlar elle zımparalanır.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon fi-4">📦</div>
+          <h3>Hızlı kargo</h3>
+          <p>Stoktaki ürünler aynı gün, kişiye özel olanlar 1–3 günde yolda.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÜRÜNLER -->
+    <section class="section" id="urunler">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Vitrin</p>
+          <h2>Ürünlerimiz</h2>
+          <p>Beğendiğin ürünün “Satın Al” butonu seni güvenli ödeme için Shopier'e götürür.</p>
+        </div>
+        <div class="filters" id="filters" role="tablist" aria-label="Kategoriler"></div>
+        <div class="products" id="products"></div>
+      </div>
+    </section>
+
+    <!-- KİŞİYE ÖZEL -->
+    <section class="section section-alt" id="kisiye-ozel">
+      <div class="container custom-grid">
+        <div class="custom-text">
+          <p class="eyebrow">Kişiye özel sipariş</p>
+          <h2>Aklındakini anlat, biz basalım</h2>
+          <p>Formu doldur, bilgiler hazır bir WhatsApp mesajına dönüşsün. Fiyat ve teslim tarihini aynı gün içinde yazarız.</p>
+          <ol class="steps">
+            <li><span>1</span><div><strong>Formu doldur</strong>Ürün, isim, renk ve adet.</div></li>
+            <li><span>2</span><div><strong>Onay ver</strong>Sana küçük bir önizleme gönderiyoruz.</div></li>
+            <li><span>3</span><div><strong>Basılsın, gelsin</strong>Ödeme Shopier üzerinden, ürün kargoyla kapına.</div></li>
+          </ol>
+        </div>
+        <form class="custom-form" id="customForm" novalidate>
+          <div class="field">
+            <label for="fName">Adın</label>
+            <input id="fName" name="ad" type="text" placeholder="Ad Soyad" required>
+          </div>
+          <div class="field">
+            <label for="fProduct">Ürün</label>
+            <select id="fProduct" name="urun" required></select>
+          </div>
+          <div class="field">
+            <label for="fText">Yazılacak isim / metin</label>
+            <input id="fText" name="metin" type="text" placeholder="Örn. ELİF" maxlength="30">
+          </div>
+          <fieldset class="field">
+            <legend>Renkler (en fazla 4)</legend>
+            <div class="swatches" id="swatches"></div>
+          </fieldset>
+          <div class="field-row">
+            <div class="field">
+              <label for="fQty">Adet</label>
+              <input id="fQty" name="adet" type="number" min="1" value="1">
+            </div>
+            <div class="field">
+              <label for="fDate">İstenen tarih</label>
+              <input id="fDate" name="tarih" type="date">
+            </div>
+          </div>
+          <div class="field">
+            <label for="fNote">Not</label>
+            <textarea id="fNote" name="not" rows="3" placeholder="Boyut, tema, doğum günü tarihi..."></textarea>
+          </div>
+          <p class="form-error" id="formError" role="alert"></p>
+          <button type="submit" class="btn btn-whatsapp btn-block">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.03c-.25.69-1.44 1.32-1.98 1.36-.51.05-.99.24-3.33-.69-2.82-1.11-4.6-4-4.74-4.18-.14-.19-1.13-1.5-1.13-2.87s.72-2.04.97-2.32c.25-.28.55-.35.74-.35l.53.01c.17 0 .4-.06.62.48.25.6.83 2.07.9 2.22.07.15.12.32.02.51-.1.19-.15.31-.29.48l-.44.51c-.15.15-.3.31-.13.6.17.3.76 1.25 1.63 2.03 1.12 1 2.07 1.31 2.36 1.46.3.15.47.12.64-.07.18-.2.74-.86.94-1.16.2-.3.39-.25.66-.15.27.1 1.72.81 2.01.96.3.15.5.22.57.34.07.13.07.72-.18 1.42Z"/></svg>
+            WhatsApp ile Gönder
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- TOPLU SİPARİŞ -->
+    <section class="section" id="toplu">
+      <div class="container bulk">
+        <img src="https://images.pexels.com/photos/8535236/pexels-photo-8535236.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Anaokulunda renkli oyuncaklarla oynayan çocuklar" class="bulk-img" loading="lazy">
+        <div class="bulk-text">
+          <p class="eyebrow">Okul · Kreş · Doğum günü</p>
+          <h2>Toplu siparişte özel fiyat</h2>
+          <p>Doğum günü hediyeliği, sınıf hediyesi, kreş mezuniyeti ya da etkinlik ödülü... 20 adet ve üzeri siparişlerde her çocuğun ismini ayrı basıyor, kademeli indirim uyguluyoruz.</p>
+          <ul class="check-list">
+            <li>20+ adette %10, 50+ adette %20 indirim</li>
+            <li>Her parçaya ayrı isim</li>
+            <li>Tema rengine göre renk seçimi</li>
+            <li>Kurumlara fatura</li>
+          </ul>
+          <a href="#" class="btn btn-primary js-wa-bulk" target="_blank" rel="noopener">Teklif Al</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NASIL ÜRETİYORUZ -->
+    <section class="section section-alt">
+      <div class="container making">
+        <div class="making-text">
+          <p class="eyebrow">Atölyemiz</p>
+          <h2>Nasıl üretiyoruz?</h2>
+          <p>Her ürün, 4 ayrı baskı kafası olan kapalı kasa bir 3D yazıcıda basılıyor. Her renk kendi kafasından aktığı için renk geçişleri temiz oluyor ve filament israfı neredeyse sıfır.</p>
+          <p>Baskıdan çıkan her parçayı tek tek kontrol ediyor, çapakları temizliyor ve paketliyoruz.</p>
+        </div>
+        <img src="https://images.pexels.com/photos/19835322/pexels-photo-19835322.jpeg?auto=compress&cs=tinysrgb&w=900" alt="3D yazıcı baskı yaparken yakın çekim" class="making-img" loading="lazy">
+      </div>
+    </section>
+
+    <!-- SSS -->
+    <section class="section" id="sss">
+      <div class="container narrow">
+        <div class="section-head">
+          <p class="eyebrow">Merak edilenler</p>
+          <h2>Sık sorulan sorular</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Ürünler hangi malzemeden yapılıyor?</summary>
+            <p>Mısır nişastası gibi bitkisel kaynaklardan üretilen PLA filament kullanıyoruz. Kokusuzdur ve oyuncak üretiminde en çok tercih edilen 3D baskı malzemesidir.</p>
+          </details>
+          <details>
+            <summary>Kaç yaş için uygun?</summary>
+            <p>Ürünlerimiz 3 yaş ve üzeri çocuklar için tasarlanmıştır. Küçük parça içerdiğinden 3 yaş altı çocuklar için uygun değildir.</p>
+          </details>
+          <details>
+            <summary>Siparişim ne zaman kargoya verilir?</summary>
+            <p>Stoktaki ürünler aynı gün ya da ertesi iş günü, kişiye özel ürünler 1–3 iş günü içinde kargoya verilir.</p>
+          </details>
+          <details>
+            <summary>Ödemeyi nasıl yapıyorum?</summary>
+            <p>Tüm ödemeler Shopier üzerinden kredi kartı ya da banka kartıyla güvenle alınır. Kişiye özel siparişlerde sana özel bir Shopier linki gönderiyoruz.</p>
+          </details>
+          <details>
+            <summary>İade ve değişim var mı?</summary>
+            <p>Stok ürünlerde 14 gün içinde iade hakkın var. Kişiye özel basılan ürünler iade edilemez, ancak üretim hatası varsa ücretsiz yeniden basıyoruz.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="#" class="logo logo-light">
+          <span class="logo-mark">3D</span>
+          <span class="logo-text">Oyun<span>bozan</span></span>
+        </a>
+        <p class="footer-note">3D baskı çocuk oyuncakları ve kişiye özel ürünler.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#" class="js-instagram" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" class="js-shopier" target="_blank" rel="noopener">Shopier Mağaza</a>
+        <a href="#" class="js-wa" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> 3D Oyunbozan</span>
+      <span>Fotoğraflar: <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a></span>
+    </div>
+  </footer>
+
+  <a href="#" class="wa-float js-wa" target="_blank" rel="noopener" aria-label="WhatsApp ile yaz">
+    <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.03c-.25.69-1.44 1.32-1.98 1.36-.51.05-.99.24-3.33-.69-2.82-1.11-4.6-4-4.74-4.18-.14-.19-1.13-1.5-1.13-2.87s.72-2.04.97-2.32c.25-.28.55-.35.74-.35l.53.01c.17 0 .4-.06.62.48.25.6.83 2.07.9 2.22.07.15.12.32.02.51-.1.19-.15.31-.29.48l-.44.51c-.15.15-.3.31-.13.6.17.3.76 1.25 1.63 2.03 1.12 1 2.07 1.31 2.36 1.46.3.15.47.12.64-.07.18-.2.74-.86.94-1.16.2-.3.39-.25.66-.15.27.1 1.72.81 2.01.96.3.15.5.22.57.34.07.13.07.72-.18 1.42Z"/></svg>
+  </a>
+
+  <script src="products.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
